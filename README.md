@@ -2,21 +2,22 @@
 
 These UIScrollView categories makes it super easy to add pull-down-refresh and pull-up-refresh to any UIScrollView (or any of its subclass). Instead of relying on delegates and/or subclassing `UIViewController`, OTPullToRefresh uses the Objective-C runtime to add the following 2 key methods to `UIScrollView`:
 
-```objective-c
-- (void)addPullDownRefreshWithAction:(OTPullActionHandler)handler type:(OTPullDownRefreshType)type;
+objective-c		
+- (void)addPullDownRefreshWithAction:(OTPullActionHandler)handler type:(OTPullDownRefreshType)type;		
 - (void)addPullUpRefreshWithAction:(OTPullActionHandler)handler type:(OTPullUpRefreshType)type;
 
 
-## Installation
+
+##Installation
 
 
-### Manually
+###Manually
 
 _**Important note if your project doesn't use ARC**: you must add the `-fobjc-arc` compiler flag to `UIScrollView+OTPullToRefresh.m` , `OTPullRefreshBaseView.m`, `OTPullUpRefreshView.m` and `OTPullDownRefreshView.m` in Target Settings > Build Phases > Compile Sources._
 
 * Drag the `OTPullToRefresh/OTPullRefresh` folder into your project and add all of it's files to your project
 
-## Usage
+###Usage
 
 (see sample Xcode project in `ViewController.m`)
 
