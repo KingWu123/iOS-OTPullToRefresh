@@ -43,6 +43,10 @@ If you’d like to programmatically trigger the pull down refresh (for instance 
 ```objective-c
 [tableView autoTriggerPullDownRefresh];
 ```
+you need remove Refresh view first when scorllview released。
+```objective-c
+[tableview removePullDownRefresh];
+```
  
 ## Under the hood
 
