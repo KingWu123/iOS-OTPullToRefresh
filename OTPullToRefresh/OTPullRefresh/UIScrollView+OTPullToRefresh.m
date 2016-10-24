@@ -51,6 +51,7 @@
     OTPullRefreshBaseView *refreshView = (OTPullRefreshBaseView *)[self viewWithTag:OTPullDownDefualtRefreshViewTag];
     if (refreshView != nil)
     {
+        [refreshView removeKVO];
         [refreshView removeFromSuperview];
     }
     
@@ -124,6 +125,7 @@
     OTPullRefreshBaseView *refreshView = (OTPullRefreshBaseView *)[self viewWithTag:OTPullUpDefualtRefreshViewTag];
     if (refreshView != nil)
     {
+        [refreshView removeKVO];
         [refreshView removeFromSuperview];
     }
 
