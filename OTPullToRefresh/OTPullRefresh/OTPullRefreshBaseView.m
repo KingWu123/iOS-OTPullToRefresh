@@ -45,7 +45,7 @@
 - (void)dealloc
 {
     //self.scrollView.delegate = nil;
-    [self removeKVO];
+    //[self removeKVO];
 }
 
 
